@@ -26,7 +26,7 @@ declare(strict_types=1);
  * 
  */
 
-namespace OCA\BreezeDark\Controller;
+namespace OCA\ConceptDark\Controller;
 
 use OCP\AppFramework\Controller;
 use OCP\IConfig;

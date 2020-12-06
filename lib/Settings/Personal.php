@@ -26,7 +26,7 @@ declare(strict_types=1);
  * 
  */
 
-namespace OCA\BreezeDark\Settings;
+namespace OCA\ConceptDark\Settings;
 
 use OCP\App\IAppManager;
 use OCP\AppFramework\Http\TemplateResponse;
@@ -70,7 +70,7 @@ class Personal implements ISettings {
     public function getForm(): TemplateResponse {
         $default = $this->config->getAppValue($this->appName, 'theme_enabled', "0");
         $themeEnabled = $this->config->getUserValue($this->userId, $this->appName, 'theme_enabled', $default);
-        return new TemplateResponse('breezedark', 'personal', [ 
+        return new TemplateResponse('conceptdark', 'personal', [ 
             "themeEnabled" => $themeEnabled,
             "appWebPath" => $this->appWebPath
         ]);

@@ -23,7 +23,7 @@
  */
 
 window.addEventListener("DOMContentLoaded", function () {
-    $("#breezedark-enabled").change(function () {
-        $.post(OC.generateUrl("apps/breezedark/settings"), { theme_enabled: this.checked ? 1 : 0 });
+    $("#conceptdark-enabled").change(function () {
+        $.post(OC.generateUrl("apps/conceptdark/settings"), { theme_enabled: this.checked ? 1 : 0 });
     });
 });

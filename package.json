@@ -1,8 +1,8 @@
 {
-    "name": "breezedark",
+    "name": "conceptdark",
     "version": "1.0.0",
-    "description": "Breeze Dark theme for Nextcloud",
-    "author": "Magnus Walbeck",
+    "description": "Concept Dark Theme for Nextcloud",
+    "author": "David Kang",
     "devDependencies": {
         "prettier": "^2.1.2",
         "stylelint": "^13.7.2",

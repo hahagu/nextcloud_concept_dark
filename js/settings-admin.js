@@ -23,19 +23,19 @@
  */
 
 window.addEventListener("DOMContentLoaded", function () {
-    $("#breezedark-theme-enabled").change(function () {
-        $.post(OC.generateUrl("apps/breezedark/settings/admin"), {
+    $("#conceptdark-theme-enabled").change(function () {
+        $.post(OC.generateUrl("apps/conceptdark/settings/admin"), {
             theme_enabled: this.checked ? 1 : 0,
-            theme_login_page: $("#breezedark-theme-login-page").prop("checked") ? 1 : 0,
+            theme_login_page: $("#conceptdark-theme-login-page").prop("checked") ? 1 : 0,
         });
 
-        $("#breezedark-theme-login-page").prop("disabled", !$("#breezedark-theme-enabled").prop("checked"))
+        $("#conceptdark-theme-login-page").prop("disabled", !$("#conceptdark-theme-enabled").prop("checked"))
     });
 
-    $("#breezedark-theme-login-page").change(function () {
-        $.post(OC.generateUrl("apps/breezedark/settings/admin"), {
+    $("#conceptdark-theme-login-page").change(function () {
+        $.post(OC.generateUrl("apps/conceptdark/settings/admin"), {
             theme_login_page: this.checked ? 1 : 0,
-            theme_enabled: $("#breezedark-theme-enabled").prop("checked") ? 1 : 0,
+            theme_enabled: $("#conceptdark-theme-enabled").prop("checked") ? 1 : 0,
         });
     });
 });

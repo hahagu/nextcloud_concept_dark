@@ -24,16 +24,16 @@
  */
 
 
-script('breezedark', 'settings-admin');
+script('conceptdark', 'settings-admin');
 ?>
 
-<div id="breezedark" class="breezedark-admin section">
-    <h2><?php p($l->t("Breeze Dark")); ?></h2>
-    <p><?php p($l->t("A Dark theme based on Breeze Dark by the KDE project. Please refresh the page for changes to take effect.")); ?></p>
+<div id="conceptdark" class="conceptdark-admin section">
+    <h2><?php p($l->t("Concept Dark")); ?></h2>
+    <p><?php p($l->t("Concept Dark Theme for Nextcloud, providing a modern acrylic interface with dark sleek look. Please refresh the page for changes to take effect.")); ?></p>
     <p><?php p($l->t("This setting will enable the theme by default, for any unauthenticated users and users who haven't set a preference.")); ?></p>
-    <input type="checkbox" class="checkbox" id="breezedark-theme-enabled" <?php p($themeEnabled ? "checked" : ""); ?>>
-    <label for="breezedark-theme-enabled"><?php p($l->t("Enable Breeze Dark theme by default")); ?></label>
+    <input type="checkbox" class="checkbox" id="conceptdark-theme-enabled" <?php p($themeEnabled ? "checked" : ""); ?>>
+    <label for="conceptdark-theme-enabled"><?php p($l->t("Enable Concept Dark theme by default")); ?></label>
     <p><?php p($l->t("This setting will allow you to choose if the login page should be themed when the theme is enabled by default")); ?></p>
-    <input type="checkbox" class="checkbox" id="breezedark-theme-login-page" <?php p($themeEnabled ? "" : "disabled");?> <?php p($themeLoginPage ? "checked" : "");?>>
-    <label for="breezedark-theme-login-page"><?php p($l->t("Theme the login page")); ?></label>
+    <input type="checkbox" class="checkbox" id="conceptdark-theme-login-page" <?php p($themeEnabled ? "" : "disabled");?> <?php p($themeLoginPage ? "checked" : "");?>>
+    <label for="conceptdark-theme-login-page"><?php p($l->t("Theme the login page")); ?></label>
 </div>

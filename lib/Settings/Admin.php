@@ -26,7 +26,7 @@ declare(strict_types=1);
  * 
  */
 
-namespace OCA\BreezeDark\Settings;
+namespace OCA\ConceptDark\Settings;
 
 use OCP\AppFramework\Http\TemplateResponse;
 use OCP\IConfig;
@@ -56,7 +56,7 @@ class Admin implements ISettings {
     public function getForm(): TemplateResponse {
         $themeEnabled = $this->config->getAppValue($this->appName, 'theme_enabled', "0");
         $themeLoginPage = $this->config->getAppValue($this->appName, 'theme_login_page', "1");
-        return new TemplateResponse('breezedark', 'admin', [ 
+        return new TemplateResponse('conceptdark', 'admin', [ 
             "themeEnabled" => $themeEnabled,
             "themeLoginPage" => $themeLoginPage
         ]);

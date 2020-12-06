@@ -26,7 +26,7 @@ declare(strict_types=1);
  * 
  */
 
-namespace OCA\BreezeDark\AppInfo;
+namespace OCA\ConceptDark\AppInfo;
 
 use OCP\AppFramework\App;
 use OCP\AppFramework\Bootstrap\IBootContext;
@@ -39,7 +39,7 @@ use OCP\Util;
 class Application extends App implements IBootstrap {
 
     /** @var string */
-    public const APP_NAME = 'breezedark';
+    public const APP_NAME = 'conceptdark';
 
     /** @var string */
     protected $appName;
